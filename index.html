@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Be My Valentine</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: #333;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #d6336c;
+    }
+    button {
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      margin: 20px;
+      font-size: 1.2em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #a61e4d;
+    }
+    #message {
+      margin-top: 40px;
+      font-size: 1.5em;
+      color: #4a4a4a;
+    }
+    .love-note {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #5c3d2e;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Will you be my Valentine, Shraddha? 💖</h1>
+  <button onclick="sayYes()">Yes</button>
+  <button onclick="sayNo()">No</button>
+
+  <div id="message"></div>
+  <div class="love-note" id="loveNote"></div>
+
+  <script>
+    function sayYes() {
+      document.getElementById("message").innerHTML = 
+        "🎉 Congratulations Shraddha! You are Prasad’s Valentine 💕<br>Wishing you both all the best for your future together!";
+      document.getElementById("loveNote").innerHTML = 
+        "Every heartbeat of mine whispers your name, Shraddha. You are my today, my tomorrow, and my forever. Thank you for being the most beautiful part of my life.";
+    }
+    function sayNo() {
+      document.getElementById("message").innerHTML = 
+        "😢 Oh no! Maybe next time...";
+      document.getElementById("loveNote").innerHTML = "";
+    }
+  </script>
+</body>
+</html>
